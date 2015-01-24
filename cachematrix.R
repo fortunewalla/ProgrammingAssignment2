@@ -130,7 +130,8 @@ cacheSolve <- function(x, ...) {
 #      $git add cacheMatrix.R
 # 3) Commit your completed R file into YOUR git repository and push your
 # git branch to the GitHub repository under your account. 
-# Ans: $ git commit -m "PA 2 - creating a cache matrix" cacheMatrix.R
+# Ans: $git commit -m "PA 2 - creating a cache matrix" cacheMatrix.R
+#      $git push
 #
 # Submit to Coursera the URL to your GitHub repository that contains the 
 # completed R code for the assignment.
