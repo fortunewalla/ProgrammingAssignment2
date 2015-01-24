@@ -133,5 +133,87 @@ cacheSolve <- function(x, ...) {
 # Ans: $git commit -m "PA 2 - creating a cache matrix" cacheMatrix.R
 #      $git push
 #
+# GIT OUTPUT
+# GNUUser@GNULinux:~/github.com/datasciencecoursera/ProgrammingAssignment2$ git statusOn branch master
+# Your branch is up-to-date with 'origin/master'.
+# 
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+# (use "git checkout -- <file>..." to discard changes in working directory)
+# 
+# modified:   cachematrix.R
+# 
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+# 
+# cachematrix.R~
+#   
+#   no changes added to commit (use "git add" and/or "git commit -a")
+# GNUUser@GNULinux:~/github.com/datasciencecoursera/ProgrammingAssignment2$ git add cachematrix.R
+# GNUUser@GNULinux:~/github.com/datasciencecoursera/ProgrammingAssignment2$ git statusOn branch master
+# Your branch is up-to-date with 'origin/master'.
+# 
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+# 
+# modified:   cachematrix.R
+# 
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+# 
+# cachematrix.R~
+#   
+#   GNUUser@GNULinux:~/github.com/datasciencecoursera/ProgrammingAssignment2$ git commit -m "PA 2 - creating a cache matrix" cachematrix.R
+# [master 9326f3b] PA 2 - creating a cache matrix
+# 1 file changed, 2 insertions(+), 1 deletion(-)
+# GNUUser@GNULinux:~/github.com/datasciencecoursera/ProgrammingAssignment2$ git statusOn branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+# (use "git push" to publish your local commits)
+# 
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+# 
+# cachematrix.R~
+#   
+#   nothing added to commit but untracked files present (use "git add" to track)
+# GNUUser@GNULinux:~/github.com/datasciencecoursera/ProgrammingAssignment2$ git pushwarning: push.default is unset; its implicit value is changing in
+# Git 2.0 from 'matching' to 'simple'. To squelch this message
+# and maintain the current behavior after the default changes, use:
+#   
+#   git config --global push.default matching
+# 
+# To squelch this message and adopt the new behavior now, use:
+#   
+#   git config --global push.default simple
+# 
+# When push.default is set to 'matching', git will push local branches
+# to the remote branches that already exist with the same name.
+# 
+# In Git 2.0, Git will default to the more conservative 'simple'
+# behavior, which only pushes the current branch to the corresponding
+# remote branch that 'git pull' uses to update the current branch.
+# 
+# See 'git help config' and search for 'push.default' for further information.
+# (the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+#  'current' instead of 'simple' if you sometimes use older versions of Git)
+# 
+# Counting objects: 5, done.
+# Compressing objects: 100% (3/3), done.
+# Writing objects: 100% (3/3), 355 bytes | 0 bytes/s, done.
+# Total 3 (delta 1), reused 0 (delta 0)
+# To https://github.com/fortunewalla/ProgrammingAssignment2.git
+# 06cdd21..9326f3b  master -> master
+# GNUUser@GNULinux:~/github.com/datasciencecoursera/ProgrammingAssignment2$ git status
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+# 
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+# 
+# cachematrix.R~
+#   
+#   nothing added to commit but untracked files present (use "git add" to track)
+# GNUUser@GNULinux:~/github.com/datasciencecoursera/ProgrammingAssignment2$ 
+
 # Submit to Coursera the URL to your GitHub repository that contains the 
 # completed R code for the assignment.
