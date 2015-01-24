@@ -14,20 +14,21 @@
 # Computing the inverse of a square matrix can be done with the solve() function
 # in R. For this assignment, assume that the matrix supplied is always invertible.
 
-#makecacheMatrix() Creates a list of 4 functions with calculated values of
-# input matrix 'x' & the inverse of 'x'
 # input matrix can generated using general matrix form 
 # matrix(data = NA, nrow = 1, ncol = 1, byrow = FALSE, dimnames = NULL)
 
+# makecacheMatrix() Creates a list of 4 functions with calculated values of
+# input matrix 'x' & the inverse of 'x'
+
 makecacheMatrix <- function(x = matrix()) {
   s <- NULL
-  set <- function(y) {
+  set <- function(y) { # Initializes variables to their respective environments.
     x <<- y
     s <<- NULL
   }
-  get <- function() x
-  setInverse <- function(solve) s <<- solve
-  getInverse <- function() s
+  get <- function() x    # Used to retrieve original input matrix by outside functions.
+  setInverse <- function(solve) s <<- solve # Calculates inverse of input matrix
+  getInverse <- function() s # Used to retrieve Inverse matrix by outside functions.
   list(set = set, get = get,
        setInverse = setInverse,
        getInverse = getInverse)
@@ -37,14 +38,14 @@ makecacheMatrix <- function(x = matrix()) {
 ## cacheSolve()  Return a matrix that is the inverse of 'x'
 
 cacheSolve <- function(x, ...) {
-  s <- x$getInverse()
-  if(!is.null(s)) {
+  s <- x$getInverse() # retrieves Inverse Matrix
+  if(!is.null(s)) { # checks if Inverse matrix has changed or not. i.e. changes makes s == NULL
     message("getting cached data")
     return(s)
   }
-  data <- x$get()
-  s <- solve(data, ...)
-  x$setInverse(s)
+  data <- x$get() # For new values, gets the original matrix.
+  s <- solve(data, ...) # calculates Inverse Matrix
+  x$setInverse(s) # Replaces old value with new value.
   s
 }
 
